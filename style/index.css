@@ -1,1 +1,76 @@
-/* Add CSS styling here */
+/* CSS  Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*General Styles*/
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #4f4f4f;
+    font-family: 'Architects Daughter', cursive;
+}
+section {
+    padding: 4% 0;
+}
+h1, h2, h3 {
+    font-family: 'Bree Serif', serif;
+}
+a {
+    text-decoration: none;
+}
+
+/* 
+Color Codes for Me to Reference 
+    Dark Grey: #2b2b37
+    Cyan: #67d8e7
+    Indigo: #4d2d89
+    Pale Cyan: #d5f3f7
+    Chartreusse: #a4d072
+*/
+
+/* Header Section Styles */
+h1 {
+    font-size: 6rem;
+    padding: 3%;
+}
+
+nav {
+    padding: 0 5%;
+}
+nav a {
+    width: 15%;
+    text-align: center;
+    color: #4d2d89;
+    background-color: #d5f3f7;
+    border: 4px solid #4d2d89;
+    font-size: 1.8rem;
+}
+
+/* Content Section Styles */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    padding: 1%;
+}
