@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
     padding: 0;
     margin: 0;
     max-width: 100%;
-    /* border: 1px solid grey; */
+    border: 1px solid grey;
 }
 html {
     font-size: 62.5%;
@@ -201,6 +201,8 @@ footer button:hover {
 }
 
 /* Media Queries */
+
+/* Screen Width 800px */
 @media(max-width: 800px) {
     /* Header Section Styles */
     header {
@@ -273,5 +275,40 @@ footer button:hover {
     footer button {
         width: 45%;
         padding: 2% 2%;
+    }
+}
+
+/* Screen Width 500px */
+@media(max-width: 500px) {
+
+    /* Header Styles */
+    h1 {
+        font-size: 5.4rem;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    nav a {
+        width: 40%;
+    }
+
+    /* Intro Section Styles */
+    .example {
+        width: 85%;
+    }
+
+    .info {
+        width: 80%;
+    }
+
+    .info button {
+        width: 40%;
+    }
+
+     /* Footer Styles */
+     footer div {
+        width: 80%;
     }
 }
