@@ -1,1 +1,314 @@
-/* Add CSS styling here */
+/* CSS  Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*General Styles*/
+* {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    /* border: 1px solid grey; */
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #2b2b37;
+    font-family: 'Architects Daughter', cursive;
+}
+h1, h2, h3 {
+    font-family: 'Bree Serif', serif;
+}
+a {
+    text-decoration: none;
+    font-family: 'Architects Daughter', cursive;
+}
+button {
+    font-family: 'Architects Daughter', cursive;
+}
+h1 {
+    font-size: 6rem;
+    color: #d5f3f7;
+}
+h2 {
+    font-size: 3.8rem;
+}
+h3 {
+    font-size: 2.6rem;
+}
+section {
+    padding: 4% 0;
+}
+
+
+/* 
+Color Codes for Me to Reference 
+    Dark Grey: #2b2b37
+    Cyan: #67d8e7
+    Indigo: #4d2d89
+    Pale Cyan: #d5f3f7
+    Chartreusse: #a4d072
+*/
+
+/* Header Section Styles */
+header {
+    padding: 1%;
+    background-color: #2b2b37;
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.title {
+    padding: 1%;
+    width: 40%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 35%;
+    margin-left: 3%;
+}
+nav a {
+    width: 22%;
+    text-align: center;
+    color: #4d2d89;
+    background-color: #d5f3f7;
+    border: 4px solid #67d8e7;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 0.4s;
+}
+nav a:hover {
+    color: #d5f3f7;
+    background-color: #67d8e7;
+    border: 4px solid #d5f3f7;
+}
+
+/* Intro Section Styles */
+.intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.example, .info {
+    width: 40%
+}
+
+.example {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../Images/SUZIE.png");
+    height: 60vh;
+}
+
+.info button {
+    padding: 1% 0;
+    margin: 2% 0;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 30%;
+    color: #4d2d89;
+    background-color: #d5f3f7;
+    border: 4px solid #4d2d89;
+    transition: 0.4s;
+}
+.info button:hover {    
+    color: #d5f3f7;
+    background-color: #4d2d89;
+    border: 4px solid #d5f3f7;
+}
+
+.info {
+    display: flex;
+    align-items: flex-end;
+    margin: 5% 0;
+}
+
+/* Projects Section Styles*/
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 0.5%;
+    margin: 1%;
+}
+
+.container .item {
+    width: 22%;
+    margin: 2% 0;
+    text-align: center;
+}
+
+/* Footer Section Styles*/
+footer {
+    background-color: #2b2b37;
+    color: #d5f3f7;
+    text-align: center;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+footer div {
+    padding: 2%;
+    width: 40%;
+}
+
+footer button {
+    padding: 1% 0;
+    margin: 2% 0;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 30%;
+    color: #4d2d89;
+    background-color: #d5f3f7;
+    border: 4px solid #67d8e7;
+    transition: 0.4s;
+}
+footer button:hover {    
+    color: #d5f3f7;
+    background-color: #67d8e7;
+    border: 4px solid #d5f3f7;
+}
+
+/* Media Queries */
+
+/* Screen Width 800px */
+@media(max-width: 800px) {
+    /* Header Section Styles */
+    header {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        width: 80%;
+        text-align: center;
+    }
+
+    nav {
+        width: 90%;
+        margin-bottom: 2%;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        width: 30%;
+        margin: 0.5%;
+        padding: 1% 0;
+    }
+
+    /* Intro Section Styles */
+    .intro {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .example {
+        width: 70%;
+    }
+
+    .info {
+        text-align: center;
+        width: 60%;
+    }
+
+    .info button {
+        width: 40%;
+    }
+
+    /* Projects Section Styles */
+    .extra {
+        display: hidden;
+    }
+
+    .container .item {
+        width: 45%;
+        border: 3px solid #d5f3f7;
+    }
+    .item h3 {
+        margin-bottom: 8%;
+    }
+
+    .container .hidden {
+        display: none;
+    }
+
+    /* Footer Styles */
+    footer div {
+        width: 60%;
+    }
+
+    footer button {
+        width: 45%;
+        padding: 2% 2%;
+    }
+}
+
+/* Screen Width 500px */
+@media(max-width: 500px) {
+
+    /* Header Styles */
+    h1 {
+        font-size: 5.4rem;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    nav a {
+        width: 40%;
+    }
+
+    /* Intro Section Styles */
+    .example {
+        width: 85%;
+    }
+
+    .info {
+        width: 80%;
+    }
+
+    .info button {
+        width: 40%;
+    }
+
+     /* Footer Styles */
+     footer div {
+        width: 80%;
+    }
+}
